@@ -1,0 +1,159 @@
+:root {
+  
+    --Primery-bg: #F3F9E2;
+    --ActiveButton-bg: #7B9CDA;
+    --Text-primary: #000000;
+    --Text-secondary: #979797;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body{
+    background-color:var(--Primery-bg);
+    font-family: "DM Sans", sans-serif;
+    color:var(--Text-primary);
+    /* overflow-x: hidden; */
+    font-size: 16px;
+}
+
+a{
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    text-decoration: none;
+}
+.fw-bold{
+    font-weight: 700;
+}
+input:focus{
+    outline: none;
+    box-shadow: none !important;
+}
+header .navbar{
+    padding: 13px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 11;
+}
+header.header-sticky {
+    padding: 20px 12px 0;
+}
+
+footer {
+    padding: 0 12px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer  a.settings-btn {
+    color:var(--Text-primary);
+}
+main#main {
+    padding: 48px 12px 100px;
+    min-height: calc(100vh - 151px);
+}
+main#main .sidebar .nav-pills .nav-link.active {
+    color: #000000;
+    background-color: var(--ActiveButton-bg);
+}
+main#main .sidebar .nav-pills .nav-link {
+    background: 0 0;
+    border: 0;
+    border-radius: 0.25rem;
+    color: var(--Text-secondary);
+}
+main#main .sidebar .nav-pills .nav-link:hover {
+    color: #000000;
+    background-color: var(--ActiveButton-bg);
+}
+main#main .sidebar .nav-pills li.nav-item {
+    margin-bottom: 15px;
+}
+main#main section.section {
+    padding-left: 80px;
+}
+.sec-title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 36px;
+}
+.integration-wizard {
+    margin-top: 35px;
+}
+.integration-wizard  .tab-content {
+    padding-left: 70px;
+}
+.integration-wizard  .nav-pills .nav-link.active {
+    color: var(--Text-primary);
+    background: #80CD7E66;
+}
+.integration-wizard  .nav-pills .nav-link{
+    text-align: left;
+    line-height: 22px;
+    letter-spacing: 0.002em;
+    color: var(--Text-primary);
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.integration-wizard  .nav-pills .nav-link svg {
+    width: 26px;
+    margin-right: 15px;
+}
+.integration-wizard  .tab-content .tab-pane h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.002em;
+    text-align: left;
+    margin-bottom: 12px;
+}
+.integration-wizard  .tab-content .tab-pane input#search{
+    border: 1px solid #000000;
+    border-radius: 20px;
+    max-width: 416px;
+    height: 36px;
+    padding: 8px 15px;
+    background: transparent;
+    margin: 30px 0;
+}
+/* .integration-wizard .actions {
+    width: 100%;
+    max-width: calc(100% - 250px);
+    margin-left: auto;
+}
+.integration-wizard .content {
+    width: 100%;
+    max-width: calc(100% - 324px);
+    padding-left: 70px;
+}
+.integration-wizard .steps ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.integration-wizard .steps ul li{
+    margin-bottom: 30px;
+}
+.integration-wizard .steps .current-info {
+    display: none;
+}
+.integration-wizard .steps .number {
+    display: none;
+}
+.integration-wizard .steps .title {
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.002em;
+    color: var(--Text-primary);
+}
+.integration-wizard .actions  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+} */
