@@ -124,6 +124,7 @@ main#main section.section {
 /* help desk page */
 main#main .sidebar .nav-pills ul.sub-nav {
     list-style: none;
+    margin-top: 10px;
 }
 .help-desk-section {
     max-width: 778px;
@@ -136,11 +137,33 @@ main#main .sidebar .nav-pills ul.sub-nav {
     height: 
     100%;
 }
-
 .help-desk-section .help-desk-card .card-body {
     padding: 37px 50px 50px;
 }
-
+.help-desk-section  .highlighted-posts {
+    margin-top: 50px;
+}
+.help-desk-section  .highlighted-posts  .help-desk-card {
+    margin-bottom: 30px;
+}
+.mb-30px{
+    margin-bottom: 30px;
+}
+.help-desk-section  button.accordion-button {
+    background: #D9D9D9;
+    border: 0;
+    color: var(--Text-primary);
+    font-weight: 700;
+}
+.help-desk-section .accordion-button:focus {
+    z-index: 3;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+.help-desk-section .accordion-body{
+    background: #D9D9D9;
+}
 /* .integration-wizard .actions {
     width: 100%;
     max-width: calc(100% - 250px);

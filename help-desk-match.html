@@ -40,7 +40,7 @@
                     <div class="sidebar">
                         <ul class="nav flex-column nav-pills">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                <a class="nav-link " aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">FloraOS</a>
@@ -52,7 +52,15 @@
                                 <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Budtender Portal</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="help-desk.html" tabindex="-1" aria-disabled="true">Help Desk</a>
+                                <a class="nav-link active" href="help-desk.html" tabindex="-1" aria-disabled="true">Help Desk</a>
+                                <ul class="sub-nav ">
+                                    <li>
+                                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Flora Match</a>
+                                    </li>
+                                    <li >
+                                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Flora OS</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -60,76 +68,57 @@
                 <!-- content -->
                 <div class="col-md-10">
                     <section class="section">
-                        <h1 class="sec-title">Flora Systems Integration Wizard</h1>
-                        <p class="fw-bold">Complete all required software connections to unlock your Flora Portal</p>
-                        <div class="integration-wizard">
-                            <div class="d-flex align-items-start">
-                                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                  <button class="nav-link active" id="v-pills-point-sale-tab" data-bs-toggle="pill" data-bs-target="#v-pills-point-sale" type="button" role="tab" aria-controls="v-pills-point-sale" aria-selected="true">
-                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="15" cy="15" r="13.5" stroke="#15C427" stroke-width="3"/>
-                                        <path d="M21 9L13.8 21.96L9 17.16" stroke="#15C427" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>  
-                                    Point of sale
-                                </button>
-                                  <button class="nav-link" id="v-pills-inventory-management-tab" data-bs-toggle="pill" data-bs-target="#v-pills-inventory-management" type="button" role="tab" aria-controls="v-pills-inventory-management" aria-selected="false">
-                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="15" cy="15" r="13.5" stroke="#15C427" stroke-width="3"/>
-                                        <path d="M21 9L13.8 21.96L9 17.16" stroke="#15C427" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>  
-                                    Inventory management
-                                </button>
-                                  <button class="nav-link" id="v-pills-CRM-tab" data-bs-toggle="pill" data-bs-target="#v-pills-CRM" type="button" role="tab" aria-controls="v-pills-CRM" aria-selected="false">
-                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="15" cy="15" r="13.5" stroke="#15C427" stroke-width="3"/>
-                                        <path d="M21 9L13.8 21.96L9 17.16" stroke="#15C427" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>  
-                                     CRM/ Customer loyalty
-                                    </button>
-                                  <button class="nav-link" id="v-pills-seed-sale-tab" data-bs-toggle="pill" data-bs-target="#v-pills-seed-sale" type="button" role="tab" aria-controls="v-pills-seed-sale" aria-selected="false">
-                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="15" cy="15" r="13.5" stroke="#15C427" stroke-width="3"/>
-                                        <path d="M21 9L13.8 21.96L9 17.16" stroke="#15C427" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>  
-                                    Seed to sale
-                                </button>
-                                  <button class="nav-link" id="v-pills-CMS-tab" data-bs-toggle="pill" data-bs-target="#v-pills-CMS" type="button" role="tab" aria-controls="v-pills-CMS" aria-selected="true">
-                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="15" cy="15" r="13.5" stroke="#15C427" stroke-width="3"/>
-                                        <path d="M21 9L13.8 21.96L9 17.16" stroke="#15C427" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>  
-                                     CMS/ Website
-                                    </button>
-                                  <!-- <button class="nav-link" id="v-pills-other-tab" data-bs-toggle="pill" data-bs-target="#v-pills-other" type="button" role="tab" aria-controls="v-pills-other" aria-selected="false">Other</button> -->
-
+                        <h1 class="sec-title">Flora Match Help Desk</h1>
+                        <p class="fw-bold">This is all the stuff related to Flora Match support</p>
+                        <div class="help-desk-section">
+                            <div class="row faqs">
+                                <div class="col-md-6">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Technical issue
+                                          </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                          </div>
+                                        </div>
+                                      </div>
                                 </div>
-                                <div class="tab-content" id="v-pills-tabContent">
-                                  <div class="tab-pane fade show active" id="v-pills-point-sale" role="tabpanel" aria-labelledby="v-pills-point-sale-tab">
-                                    <h2>Seed to Sale</h2>
-                                    <p>Connect your seed to sale system so Flora has the ability to<br> see batch data and COAs. I think.</p>
-                                    <input type="text" class="form-control" id="search" placeholder="Don’t see what you’re looking for? Start typing here...">
-                                    <div class="icons-row d-flex gap-5">
-                                        <div class="icon">
-                                            <img src="assets/images/metrc.svg" alt="img-fluid">
+                                <div class="col-md-6">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
+                                            Technical issue 2
+                                          </button>
+                                        </h2>
+                                        <div id="collapsetwo" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                          </div>
                                         </div>
-                                        <div class="icon">
-                                            <img src="assets/images/dutchie.svg" alt="img-fluid">     
-                                        </div>
-                                        <div class="icon">
-                                            <img src="assets/images/flowhub.svg" alt="img-fluid">
-                                        </div>
-                                        <div class="icon">
-                                            <img src="assets/images/jane.svg" alt="img-fluid">      
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="highlighted-posts">
+                                <div class="row">
+                                    <div class="col-md-12 mb-30px">
+                                        <div class="card help-desk-card">
+                                            <div class="card-body">
+                                                <p class="card-title">Frequently asked questions section</p>
+                                            </div>
                                         </div>
                                     </div>
-                                  </div>
-                                  <div class="tab-pane fade" id="v-pills-inventory-management" role="tabpanel" aria-labelledby="v-pills-inventory-management-tab">.Inventory management..</div>
-                                  <div class="tab-pane fade" id="v-pills-CRM" role="tabpanel" aria-labelledby="v-pills-CRM-tab">.CRM/ Customer loyalty..</div>
-                                  <div class="tab-pane fade" id="v-pills-seed-sale" role="tabpanel" aria-labelledby="v-pills-seed-sale-tab">.Seed to sale..</div>
-                                  <div class="tab-pane fade" id="v-pills-CMS" role="tabpanel" aria-labelledby="v-pills-CMS-tab">..CMS/ Website.</div>
-                                  <!-- <div class="tab-pane fade" id="v-pills-other" role="tabpanel" aria-labelledby="v-pills-messages-tab">..Other.</div> -->
+                                    <div class="col-md-12">
+                                        <div class="card help-desk-card">
+                                            <div class="card-body">
+                                                <p class="card-title">Need more help? Click here</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                     </section>
                 </div>
